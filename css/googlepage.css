@@ -1,3 +1,4 @@
+/* Header */
 ul
 {
     list-style-type: none;
@@ -72,15 +73,17 @@ li a
 
 #gsigninid:hover
 {
-    opacity: 0.90;
+    opacity: 0.75; 
 }
 .gappsanchor:hover
 {
     opacity:0.75;
     border-radius:50%;
     background-color: whitesmoke;
+    
 }
 
+/* Main Content */
 .main-content img
 {
     display: block;
@@ -132,9 +135,12 @@ li a
     height: 44px;
     align-items: center;
     border-radius: 24px;
-    
-
 } 
+.flex-container:hover
+{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
 .flex-search
 {
      
@@ -149,12 +155,59 @@ li a
     word-spacing: 0px;
     cursor: text;
 }
+
 .flex-search:focus
 {
     outline:none; 
 }
+.btn-container
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    align-items: flex-start;
+}
+
+.btn-container input
+{
+    height: 36px;
+    margin: 11px 4px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 54px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    padding:0 15px 0 15px;
+    font-weight:lighter;
+    font-family: Arial, sans-serif;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}   
 
 @media (max-width: 584px) {
+    .flex-container {
+        width: 100%;
+    }
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content img
+   {
+    width:30%;
+   }
+
+}
+/* 
+@media (max-width: 280px) {
     .flex-container {
         width: 90%;
     }
@@ -162,14 +215,42 @@ li a
    {
     width:50%;
    }
+} 
+} */
+
+/* Footer */
+.bottom-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    border-top: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-top:20%;
+    margin-bottom: 0; 
 }
-@media (max-width: 280px) {
-    .flex-container {
-        width: 100%;
+.bottom-footer li a
+{
+    color: #70757a;
+    text-decoration: none;  
+    font-size: 14px; 
+    margin-right:auto; 
+    margin-left: 20px; 
+    margin-bottom: auto;
+}
+.bottom-footer li a:hover
+{
+    text-decoration: underline;   
+}
+
+@media (max-width: 584px) {
+    .bottom-footer {
+        justify-content:space-around;
     }
-    .main-content img
-   {
-    width:50%;
-   }
-}
-}
+    
+} 
+
+
+
+
