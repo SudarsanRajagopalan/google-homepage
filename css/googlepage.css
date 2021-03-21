@@ -20,7 +20,7 @@ li a
     margin-right: -10px;
     cursor: pointer;
 }
-.glink
+.glink, glink:visited
 {
     color: rgba(0,0,0,0.87);
     text-decoration: none;
@@ -47,8 +47,7 @@ li a
     margin-right: 8px;
     text-align: center;
     padding: 9px 23px 9px 23px;
-
-   
+    border-radius: 4px;   
 }
 .gapps
 {
@@ -71,9 +70,67 @@ li a
     padding-right: 0px;
 }
 
+#gsigninid:hover
+{
+    opacity: 0.90;
+}
+.gappsanchor:hover
+{
+    opacity:0.75;
+    border-radius:50%;
+    background-color: whitesmoke;
+}
+
+.main-content img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
 
 
+.flex-lens
+{
+    margin-top: 3px;
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+   /* display: inline-block; */
+    fill: #9aa0a6;
+    line-height: 24px; 
+    padding: 10px;
+    position: relative;
+}
+.flex-mic
+{
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+    /*display: inline-block;*/
+    line-height: 24px; 
+    position: relative;
+    padding: 10px;
+}
 
+.flex-container
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:30px;
+   /* border-radius: 5px;
+    width: 300px;
+    height: 44px;*/
 
-
-
+} 
+.flex-search
+{
+     background-color: gray;
+   /* height: 100%;
+    width:100%; */
+    padding: 10px;
+    
+    
+}
