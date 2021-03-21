@@ -116,6 +116,10 @@ li a
     position: relative;
     padding-right: 10px;
 }
+.flex-mic:hover
+{
+    cursor:pointer;
+}
 .main-content
 {
     display: flex;
