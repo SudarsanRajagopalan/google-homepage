@@ -2,6 +2,6 @@
     <body>
         <h2><a href="https://www.theodinproject.com/">The ODIN Project</h2>
         <br/>
-        <center><h3><a href="https://sudarsanrajagopalan.github.io/google-homepage/">Sudarsan's Google</h3></center>
+        <h3 style="text-align: center;"><a href="https://sudarsanrajagopalan.github.io/google-homepage/">Sudarsan's Google</h3>
     </body>
 </html>
